@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* background-color: #282828; */
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* First value is from left and second is from top. You can use use number as well*/
+    background: #078216 url(/img/Callisto2.png) no-repeat center center;
+    background-size: cover;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #F50057;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+#card {
+    margin: auto;
+    background-color: white;
+    width: 400px;
+    border-radius: 1em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+::-moz-selection {
+    color: #f00850;
+    background: #ff262626
+}
+
+::selection {
+    color: #f00850;
+    background: #ff262626
+}
+
+img {
+    border-radius: 10em;
+    width: 200px;
+    display: block;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i {
+    color: #f00850;
+}
+
+a {
+    text-decoration: none;
+    color: #f00850;
+}
+
+i:hover {
+    color: #444;
+}
+
+.icon {
+    margin-left: 20px;
+}
+
+#social {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: transparent none;
+
+    }
+
+    #card {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .accordion {
+        margin-top: 0;
+    }
+}
+.accordion {
+    background-color: #ffffff;
+    color: #f00850;
+    cursor: pointer;
+    padding: 5%;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    margin-top: -5%;
+}
+
+.panel {
+    display: none;
+    background-color: #ffffff;
+    overflow: hidden;
+    -webkit-padding-after: 5%;
+}
+
+#objective {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
