@@ -1,29 +1,25 @@
 <html>
-
 <head>
     <title>Sid-Sun</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/Square_Callisto.png">
     <style type="text/css">
-       body {
+        body {
             margin: 0;
             padding: 0;
             border: 0;
-        }
-       .wrap {
-            height: 100%;
-            background-color: #FF0000;
-            overflow: hidden;
-            position: relative;
-        }
-        .image {
+           /* background-color: #282828; */
+            display: table;
             position: absolute;
-            left: 50%;
-            margin-left: -250px;
+            height: 100%;
+            width: 100%;
             background-color: #078216;
-            width:500px;
-            height:100%;
+            background-image: url(img/Callisto2.png);
+            background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+            background-repeat:no-repeat;
+            background-size: cover;
         }
         h1, h2, h3 {
             text-align: center;
@@ -38,15 +34,17 @@
         }
         #card {
             margin: auto;
-            position: absolute;
-            background-color: #fff;
+            background-color: white;
             width: 350px;
-            height: 511px;
             border-radius: 1em;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .acc_content {
+            margin-top: -5px;
         }
         ::-webkit-selection {
             color:#f00850;
@@ -61,12 +59,6 @@
             background:#ff262626
         }
         img {
-            margin-top: 30px;
-            border-radius: 50%;
-            width: 200px;
-            margin-left: 23%;
-        }
-        img {
             border-radius: 50%;
             width: 200px;
             display: block;
@@ -74,8 +66,9 @@
             margin-left: auto;
             margin-right: auto;
         }
-        i {
-            color: #F50057;
+        i, a {
+            color: #f00850;
+            text-decoration: none;
         }
         i:hover {
             color: #444;
@@ -87,44 +80,82 @@
             text-align: center;
             padding-bottom: 40px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 760px) {
             body {
-                background-image:none;
+                background-color: transparent;
+                background-image: none;
 
             }
-           .wrap {
-                height: 0%;
-            }
-            .image {
-                height: 0%;
-                width: 0%;
-            }
             #card {
-                width: auto;
+                width: 100%;
                 margin: 0;
                 border-radius: 0;
             }
+            .acc_content, .accordion {
+                margin: 0;
+            }
         }
     </style>
+    <link type="text/css" rel="stylesheet" href="css/acc.css">
 </head>
 
 <body>
-<div class="wrap">
-    <div class="image"></div>
-</div>
-<div id="card">
-    <img src="https://avatars0.githubusercontent.com/u/22845347?s=460&v=4">
-    <h1>Sid Sun</h1>
-    <h2>Web Developer</h2>
-    <h3>You can't be enlightened if you're the brightest.</h3>
-    <div id="social">
-    <a href="https://www.GitHub.com/Sid-Sun" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-    <a class="icon" href="mailto:sidharth.soni525@gmail.com" target="_blank"><i class="fas fa-envelope-open fa-2x"></i></a>
-    <a class="icon" href="https://t.me/SidSun" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
-    <a class="icon" href="https://plus.google.com/+SidharthS53" target="_blank"><i class="fab fa-google-plus fa-2x"></i></a>
-    <a class="icon" href="https://twitter.com/SidharthS525" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+<div class="middle">
+    <div id="card">
+        <img src="https://avatars0.githubusercontent.com/u/22845347?s=460&amp;v=4">
+        <h1>Sid Sun</h1>
+        <h2>Front-End Web Developer</h2>
+        <h3>You can't be enlightened if you're the brightest.</h3>
+        <button class="accordion">Objective</button>
+        <div class="panel">
+            <h3 class="acc_content">Sidharth,	has	a	keen	interest	in	server	management	and	web	development,	he	has	always	been	appreciated	and	acknowledged	for	his	debugging	and	troubleshooting	skills,	he	used	to	maintain	and	develop	open	source	android	projects	and	he	has	worked	with	services	like	git	and	Jenkins.</h3>
+        </div>
+        <button class="accordion">Skills</button>
+        <div class="panel">
+            <h3 class="acc_content">Git</h3>
+            <h3 class="acc_content">JavaScript</h3>
+            <h3 class="acc_content">Server Management</h3>
+            <h3 class="acc_content">Linux C.L.I.</h3>
+            <h3 class="acc_content">H.T.M.L.</h3>
+            <h3 class="acc_content">C.S.S.</h3>
+            <h3 class="acc_content">Jenkins</h3>
+            <h3 class="acc_content">Bash Scripting</h3>
+            <h3 class="acc_content">Leadership</h3>
+        </div>
+        <button class="accordion" style="margin-bottom: 15px;">Projects I've worked on</button>
+        <div class="panel" id="last_acc_button">
+            <h3 class="acc_content"><a href="https://Cosmic-OS.org" target="_blank">Cosmic-OS</a></h3>
+            <h3 class="acc_content"><a href="https://sid-sun.github.io/Change-CSS-Internal/" target="_blank">Change Internal CSS</a></h3>
+            <h3 class="acc_content"><a href="https://sid-sun.github.io/change-CSS-external/" target="_blank">Change External CSS</a></h3>
+            <h3 class="acc_content"><a href="https://www.GitHub.com/Sid-Sun" target="_blank">See More At GitHub</a></h3>
+        </div>
+        <div id="social">
+            <a href="https://www.GitHub.com/Sid-Sun" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a class="icon" href="mailto:sidharth.soni525@gmail.com" target="_blank"><i class="fas fa-envelope-open fa-2x"></i></a>
+            <a class="icon" href="https://t.me/SidSun" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+            <a class="icon" href="https://plus.google.com/+SidharthS53" target="_blank"><i class="fab fa-google-plus fa-2x"></i></a>
+            <a class="icon" href="https://twitter.com/SidharthS525" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
     </div>
 </div>
-</body>
 
+<footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</footer>
+</body>
 </html>
