@@ -1,0 +1,61 @@
+[
+  {
+    "objective": "I have a keen interest in server management, cryptography, cybersecurity, and web and application development, I have always been appreciated and acknowledged for my debugging and troubleshooting skills and coming up with intriguing and interesting solutions, I maintain and develop open source projects have worked with services including but not limited to git VCS and Jenkins."
+  },
+  {
+    "skills": [
+      "C",
+      "JavaScript",
+      "Vue JS",
+      "Angular",
+      "Python",
+      "Automation",
+      "Scripting",
+      "Server Management",
+      "Nginx",
+      "Jenkins",
+      "Linux CLI",
+      "HTML",
+      "CSS",
+      "Git VCS"
+    ]
+  },
+  {
+    "quotes": [
+      "You can't be enlightened if you're the brightest.",
+      "Life's a mystery, everything is history.",
+      "Problems are the questions we seek answers to.",
+      "Others can replicate what you are doing but not why.",
+      "Saying you shouldn't laugh at your jokes is like saying you shouldn't walk on your legs.",
+      "Librarians must hate mechanical keyboards.",
+      "If all the rules are wrong, none of the rules are wrong.",
+      "Some bits are just strange.",
+      "Is Stuart did xD it'd be ×D.",
+      "What if, illusion doesn't exist and it is an illusion that it does?",
+      "What is the thing about the thing that makes the thing the thing?",
+      "Is reality even real?",
+      "Everything in the universe embraces darkness and fights light which others can see..",
+      "If you don't learn from past mistakes, where are you? In a loop.",
+      "The hard part isn't making the decision. It's living with it.",
+      "Knowledge is power, ignorance is the bottleneck to it.",
+      "They hate you because you represent something they feel they don't have.",
+      "What is necessary is never unwise."
+    ]
+  },
+  {
+    "name": "Cosmic-OS",
+    "href": "https://cosmic-os.org"
+  },
+  {
+    "name": "strangeBits - Blog",
+    "href": "https://strangebits.co.in"
+  },
+  {
+    "name": "codeMKII - Cryptography Algo",
+    "href": "https://github.com/sid-sun/codeMKII"
+  },
+  {
+    "name": "Find more at GitHub!",
+    "href": "https://github.com/sid-sun"
+  }
+]
